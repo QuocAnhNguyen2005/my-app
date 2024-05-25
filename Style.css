@@ -1,0 +1,26 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #BBB;
+}
+.heart{
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: rgb(203, 27, 209);
+    transform: rotate(45deg);
+    border-radius: 200px, 200px, 0, 0;
+}
+.heart::before {
+    content: "";
+    top: 30px;
+    left: -30px;
+    height: 160px;
+    width: 100px;
+    background-color: rgb(203, 27, 209);
+    transform: rotate(-90deg);
+    border-radius: 200px, 200px, 0, 0;
+
+}
